@@ -41,11 +41,12 @@ public class ClientWindow extends JFrame implements ActionListener, TCPConnectio
         log.setEditable(false);
         log.setLineWrap(true);
         //log.setAutoscrolls(true);
-        add (log, BorderLayout.CENTER);
+        //add (log, BorderLayout.CENTER);
 
         fieldInput.addActionListener(this);
         add(fieldInput, BorderLayout.SOUTH);
         add(fieldNickname, BorderLayout.NORTH);
+        add(sp, BorderLayout.CENTER);
 
         setVisible(true);
         try {
